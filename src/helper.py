@@ -1,6 +1,8 @@
 def imports():
   import os
   from dotenv import load_dotenv
+  import discord
+  from discord.ext import commands
 
 def setallenv():
   import os

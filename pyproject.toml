@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "python-dotenv"
+name = "Astronomer"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Tomodachi94 <tomodachi94@pm.me>"]
 
 [tool.poetry.dependencies]
 python = "3.8"
 python-dotenv = "^0.15.0"
-discord = "^1.6.0"
+"discord.py" = "^1.6.0"
 
 [tool.poetry.dev-dependencies]
 
