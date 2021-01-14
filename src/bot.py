@@ -3,6 +3,7 @@ import os
 import helper
 import discord
 from discord.ext import commands
+import aiosqlite
 #Start loading stuff
 helper.imports() #Imports deps
 helper.setallenv() #Creates variable for token and prefix
@@ -15,6 +16,6 @@ async def on_ready():
 	print("[Astronomer/src/bot.py:Status] Setting status")
 	await bot.change_presence(
 	    activity=discord.Game(os.getenv("DISCORD_BOT_PREFIX") + "help for help"))
-	print(__main__ + ":Status] Status set")
+	print(":Status] Status set")
 
 bot.run(os.getenv("DISCORD_TOKEN"))

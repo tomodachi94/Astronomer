@@ -8,6 +8,7 @@ authors = ["Tomodachi94 <tomodachi94@pm.me>"]
 python = "3.8"
 python-dotenv = "^0.15.0"
 "discord.py" = "^1.6.0"
+aiosqlite = "^0.16.0"
 
 [tool.poetry.dev-dependencies]
 
