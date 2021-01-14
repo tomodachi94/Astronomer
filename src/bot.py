@@ -8,6 +8,11 @@ import aiosqlite
 helper.imports() #Imports deps
 helper.setallenv() #Creates variable for token and prefix
 
+if not os.path.exists(r"db/astronomer.db"):
+    open(r"src/db/astronomer.db", 'w').close()
+    
+db = await aiosqlite.connect("db/astronomer.db")
+
 bot = commands.Bot(command_prefix=os.getenv("DISCORD_BOT_PREFIX"))
 
 @bot.event
